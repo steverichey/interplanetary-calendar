@@ -9,15 +9,15 @@
 import Foundation
 
 protocol Circular {
-    var diameter: Meter { get }
+    var diameter: Kilometer { get }
 }
 
 extension Circular {
-    var radius: Meter {
+    var radius: Kilometer {
         return diameter / 2.0
     }
 
-    var circumference: Meter {
+    var circumference: Kilometer {
         return radius * Double.tau
     }
 }

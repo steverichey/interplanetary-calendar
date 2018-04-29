@@ -9,7 +9,7 @@
 import Foundation
 
 protocol Rotating {
-    var rotationalVelocity: MetersPerSecond { get }
+    var rotationalVelocity: KilometerPerSecond { get }
 }
 
 extension Rotating where Self: Sphere {

@@ -12,7 +12,7 @@ protocol Sphere: Circular {
 }
 
 extension Sphere {
-    var volume: MetricUnitCubed<Meter> {
+    var volume: CubicKilometer {
         return cube(radius) * (4 / 3) * Double.pi
     }
 }

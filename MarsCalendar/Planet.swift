@@ -19,87 +19,87 @@ enum Planet: Body, Sphere, Rotating, Orbiting {
     case neptune
     // case pluto
 
-    var mass: Gram {
+    var mass: Kilogram {
         switch self {
         case .mercury:
-            return Gram(comp_mass_mercury())
+            return comp_mass_mercury()
         case .venus:
-            return Gram(comp_mass_venus())
+            return comp_mass_venus()
         case .earth:
-            return Gram(comp_mass_earth())
+            return comp_mass_earth()
         case .mars:
-            return Gram(comp_mass_mars())
+            return comp_mass_mars()
         case .jupiter:
-            return Gram(comp_mass_jupiter())
+            return comp_mass_jupiter()
         case .saturn:
-            return Gram(comp_mass_saturn())
+            return comp_mass_saturn()
         case .uranus:
-            return Gram(comp_mass_uranus())
+            return comp_mass_uranus()
         case .neptune:
-            return Gram(comp_mass_neptune())
+            return comp_mass_neptune()
         }
     }
 
-    var diameter: Meter {
+    var diameter: Kilometer {
         switch self {
         case .mercury:
-            return Meter(diameter_mercury)
+            return diameter_mercury
         case .venus:
-            return Meter(diameter_venus)
+            return diameter_venus
         case .earth:
-            return Meter(diameter_earth)
+            return diameter_earth
         case .mars:
-            return Meter(diameter_mars)
+            return diameter_mars
         case .jupiter:
-            return Meter(diameter_jupiter)
+            return diameter_jupiter
         case .saturn:
-            return Meter(diameter_saturn)
+            return diameter_saturn
         case .uranus:
-            return Meter(diameter_uranus)
+            return diameter_uranus
         case .neptune:
-            return Meter(diameter_neptune)
+            return diameter_neptune
         }
     }
 
-    var perihelion: Meter {
+    var perihelion: Kilometer {
         switch self {
         case .mercury:
-            return Meter(perihelion_mercury)
+            return perihelion_mercury
         case .venus:
-            return Meter(perihelion_venus)
+            return perihelion_venus
         case .earth:
-            return Meter(perihelion_earth)
+            return perihelion_earth
         case .mars:
-            return Meter(perihelion_mars)
+            return perihelion_mars
         case .jupiter:
-            return Meter(perihelion_jupiter)
+            return perihelion_jupiter
         case .saturn:
-            return Meter(perihelion_saturn)
+            return perihelion_saturn
         case .uranus:
-            return Meter(perihelion_uranus)
+            return perihelion_uranus
         case .neptune:
-            return Meter(perihelion_neptune)
+            return perihelion_neptune
         }
     }
 
-    var aphelion: Meter {
+    var aphelion: Kilometer {
         switch self {
         case .mercury:
-            return Meter(aphelion_mercury)
+            return aphelion_mercury
         case .venus:
-            return Meter(aphelion_venus)
+            return aphelion_venus
         case .earth:
-            return Meter(aphelion_earth)
+            return aphelion_earth
         case .mars:
-            return Meter(aphelion_mars)
+            return aphelion_mars
         case .jupiter:
-            return Meter(aphelion_jupiter)
+            return aphelion_jupiter
         case .saturn:
-            return Meter(aphelion_saturn)
+            return aphelion_saturn
         case .uranus:
-            return Meter(aphelion_uranus)
+            return aphelion_uranus
         case .neptune:
-            return Meter(aphelion_neptune)
+            return aphelion_neptune
         }
     }
 
@@ -124,24 +124,24 @@ enum Planet: Body, Sphere, Rotating, Orbiting {
         }
     }
 
-    var rotationalVelocity: MetricUnitFraction<Meter, Second> { // km/sec
+    var rotationalVelocity: KilometerPerSecond { // km/sec
         switch self {
         case .mercury:
-            return MetricUnitFraction(rotational_velocity_mercury)
+            return rotational_velocity_mercury
         case .venus:
-            return MetricUnitFraction(rotational_velocity_venus)
+            return rotational_velocity_venus
         case .earth:
-            return MetricUnitFraction(rotational_velocity_earth)
+            return rotational_velocity_earth
         case .mars:
-            return MetricUnitFraction(rotational_velocity_mars)
+            return rotational_velocity_mars
         case .jupiter:
-            return MetricUnitFraction(rotational_velocity_jupiter)
+            return rotational_velocity_jupiter
         case .saturn:
-            return MetricUnitFraction(rotational_velocity_saturn)
+            return rotational_velocity_saturn
         case .uranus:
-            return MetricUnitFraction(rotational_velocity_uranus)
+            return rotational_velocity_uranus
         case .neptune:
-            return MetricUnitFraction(rotational_velocity_neptune)
+            return rotational_velocity_neptune
         }
     }
 

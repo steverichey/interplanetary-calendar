@@ -18,6 +18,7 @@ private let earthDayInSeconds: Double = earthDayInMinutes * minuteInSeconds
 
 class MarsCalendarTests: XCTestCase {
     func testMass() {
+        XCTAssertPow(Star.sun.mass, 30)
         XCTAssertPow(Planet.mercury.mass, 23);
         XCTAssertPow(Planet.venus.mass, 24);
         XCTAssertPow(Planet.earth.mass, 24);
@@ -29,6 +30,7 @@ class MarsCalendarTests: XCTestCase {
     }
 
     func testStandardGravitationalParameter() {
+        XCTAssertEqual(132_712_440_018, Star.sun.standardGravitationalParameter, percentAccuracy: 0.1)
         XCTAssertEqual(22_032, Planet.mercury.standardGravitationalParameter, percentAccuracy: 0.1)
         XCTAssertEqual(324_859, Planet.venus.standardGravitationalParameter, percentAccuracy: 0.1)
         XCTAssertEqual(398_600.4418, Planet.earth.standardGravitationalParameter, percentAccuracy: 0.1)
@@ -40,11 +42,11 @@ class MarsCalendarTests: XCTestCase {
     }
 
     func testCircumference() {
-        XCTAssertEqual(21_344, Planet.mars.circumference, accuracy: 1000)
+        XCTAssertEqual(21_344, Planet.mars.circumference, percentAccuracy: 0.1)
     }
 
     func testRotationalVelocity() {
-        XCTAssertEqual(0.24117, Planet.mars.rotationalVelocity, accuracy: 0.1)
+        XCTAssertEqual(0.24117, Planet.mars.rotationalVelocity, percentAccuracy: 0.1)
     }
 
     func testDayLength() {

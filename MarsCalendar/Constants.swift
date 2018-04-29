@@ -9,9 +9,8 @@
 import Foundation
 
 extension Double {
-    // in km^3 / kg * sec^2
-    static var gravitationalConstant: UnitFraction<Cubed<Meter>, Product<Gram, Squared<Second>>> {
-        return UnitFraction(universal_gravitational_constant)
+    static var gravitationalConstant: CubicKilometerPerKilogramSquareSecond {
+        return universal_gravitational_constant
     }
 
     static let tau = M_TAU

@@ -11,31 +11,24 @@ import Foundation
 enum Star: Body, Sphere, Rotating {
     case sun
 
-    var mass: Gram {
+    var mass: Kilogram {
         switch self {
         case .sun:
-            return Gram(standard(1.988435, tenTo: 30))
+            return comp_mass_sun()
         }
     }
 
-    var diameter: Meter {
+    var diameter: Kilometer {
         switch self {
         case .sun:
-            return Meter(standard(1.391, tenTo: 6))
+            return diameter_sun
         }
     }
 
-    var rotationalVelocity: UnitFraction<Meter, Second> {
+    var rotationalVelocity: KilometerPerSecond {
         switch self {
         case .sun:
-            return UnitFraction(2.02)
-        }
-    }
-
-    var standardGravitationalParameter: Double {
-        switch self {
-        case .sun:
-            return standard(1.32712440018, tenTo: 11)
+            return rotational_velocity_sun
         }
     }
 }

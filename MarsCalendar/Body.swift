@@ -9,20 +9,18 @@
 import Foundation
 
 protocol Body {
-    var mass: Gram { get }
-    var density: GramsPerCubicMeter { get }
-     // km^3 / s^2
-    var standardGravitationalParameter: MetricUnitFraction<MetricUnitCubed<Meter>, MetricUnitSquared<Second>> { get }
+    var mass: Kilogram { get }
+    var density: KilogramPerCubicKilometer { get }
 }
 
 extension Body {
-    var standardGravitationalParameter: MetricUnitFraction<MetricUnitCubed<Meter>, MetricUnitSquared<Second>> {
+    var standardGravitationalParameter: CubicKilometerPerSquareSecond {
         return Double.gravitationalConstant * mass
     }
 }
 
 extension Body where Self: Sphere {
-    var density: GramsPerCubicMeter {
+    var density: KilogramPerCubicKilometer {
         return mass / volume
     }
 }

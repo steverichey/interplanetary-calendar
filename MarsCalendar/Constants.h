@@ -14,17 +14,20 @@
 
 #define SCI(a,b) a * pow(10,b)
 
-#define universal_gravitational_constant 0.0000000000000000000667408
+#define universal_gravitational_constant 0.0000000000000000000667408 // km^3 / kg * s^2
 #define M_TAU 6.28318530717958647692
+#define speed_of_light 299792.458 // km/s
+#define astrononical_unit 149597870.700 // km
 
-#define diameter_mercury   4879.40
-#define diameter_venus    12104.00
-#define diameter_earth    12742.02
-#define diameter_mars      6779.00
-#define diameter_jupiter 139820.00
-#define diameter_saturn  116460.00
-#define diameter_uranus   50724.00
-#define diameter_neptune  49244.00
+#define diameter_mercury    4879.40
+#define diameter_venus     12104.00
+#define diameter_earth     12742.02
+#define diameter_mars       6779.00
+#define diameter_jupiter  139820.00
+#define diameter_saturn   116460.00
+#define diameter_uranus    50724.00
+#define diameter_neptune   49244.00
+#define diameter_sun     1391016.00
 
 // todo: is there a way to #define these instead?
 const static inline double comp_mass_mercury() { return SCI(3.3010400, 23); }
@@ -35,6 +38,7 @@ const static inline double comp_mass_jupiter() { return SCI(1.8981300, 27); }
 const static inline double comp_mass_saturn()  { return SCI(5.6831900, 26); }
 const static inline double comp_mass_uranus()  { return SCI(8.6810300, 25); }
 const static inline double comp_mass_neptune() { return SCI(1.0241000, 26); }
+const static inline double comp_mass_sun()     { return SCI(1.9884350, 30); }
 
 #define perihelion_mercury   46001200.0
 #define perihelion_venus    107471000.0
@@ -71,5 +75,6 @@ const static inline double comp_mass_neptune() { return SCI(1.0241000, 26); }
 #define rotational_velocity_saturn    9.8710000
 #define rotational_velocity_uranus    2.5875000
 #define rotational_velocity_neptune   2.6829000
+#define rotational_velocity_sun       2.0200000
 
 #endif /* Constants_h */
