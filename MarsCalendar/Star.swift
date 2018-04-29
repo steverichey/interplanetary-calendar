@@ -14,7 +14,7 @@ enum Star: Body, Sphere, Rotating {
     var mass: Kilogram {
         switch self {
         case .sun:
-            return comp_mass_sun()
+            return mass_sun
         }
     }
 

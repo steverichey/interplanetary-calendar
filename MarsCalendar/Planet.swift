@@ -22,21 +22,21 @@ enum Planet: Body, Sphere, Rotating, Orbiting {
     var mass: Kilogram {
         switch self {
         case .mercury:
-            return comp_mass_mercury()
+            return mass_mercury
         case .venus:
-            return comp_mass_venus()
+            return mass_venus
         case .earth:
-            return comp_mass_earth()
+            return mass_earth
         case .mars:
-            return comp_mass_mars()
+            return mass_mars
         case .jupiter:
-            return comp_mass_jupiter()
+            return mass_jupiter
         case .saturn:
-            return comp_mass_saturn()
+            return mass_saturn
         case .uranus:
-            return comp_mass_uranus()
+            return mass_uranus
         case .neptune:
-            return comp_mass_neptune()
+            return mass_neptune
         }
     }
 
