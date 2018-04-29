@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D706D1E52092B20800C59A8B /* MarsCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D706D1DB2092B20800C59A8B /* MarsCalendar.framework */; };
+		D706D1E52092B20800C59A8B /* MarsCalendar_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D706D1DB2092B20800C59A8B /* MarsCalendar_iOS.framework */; };
 		D706D1EA2092B20800C59A8B /* MarsCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D1E92092B20800C59A8B /* MarsCalendarTests.swift */; };
-		D706D1EC2092B20800C59A8B /* MarsCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = D706D1DE2092B20800C59A8B /* MarsCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D706D1F82092B28000C59A8B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D1F72092B28000C59A8B /* Planet.swift */; };
+		D706D1FA2092B2FB00C59A8B /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D1F92092B2FB00C59A8B /* Calendar+Extensions.swift */; };
+		D706D1FC2092B70B00C59A8B /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D1FB2092B70B00C59A8B /* Star.swift */; };
+		D706D1FE2092B73800C59A8B /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D1FD2092B73800C59A8B /* Body.swift */; };
+		D706D2002092BAFF00C59A8B /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D1FF2092BAFF00C59A8B /* Sphere.swift */; };
+		D706D2022092C67200C59A8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2012092C67200C59A8B /* Constants.swift */; };
+		D706D2042092C6D000C59A8B /* Rotating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2032092C6D000C59A8B /* Rotating.swift */; };
+		D706D2062092C72900C59A8B /* Orbiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2052092C72900C59A8B /* Orbiting.swift */; };
+		D706D2082092C9D800C59A8B /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2072092C9D800C59A8B /* CommonTypes.swift */; };
+		D706D20A2092CB7100C59A8B /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2092092CB7100C59A8B /* Circular.swift */; };
+		D706D20C2092CE4500C59A8B /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D20B2092CE4500C59A8B /* CommonMethods.swift */; };
+		D78A955A2092D86F009B86EE /* XCTAssert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +34,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D706D1DB2092B20800C59A8B /* MarsCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarsCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D706D1DE2092B20800C59A8B /* MarsCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsCalendar.h; sourceTree = "<group>"; };
+		D706D1DB2092B20800C59A8B /* MarsCalendar_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarsCalendar_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D706D1DF2092B20800C59A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D706D1E42092B20800C59A8B /* MarsCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D706D1E92092B20800C59A8B /* MarsCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsCalendarTests.swift; sourceTree = "<group>"; };
 		D706D1EB2092B20800C59A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D706D1F72092B28000C59A8B /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		D706D1F92092B2FB00C59A8B /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
+		D706D1FB2092B70B00C59A8B /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		D706D1FD2092B73800C59A8B /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
+		D706D1FF2092BAFF00C59A8B /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
+		D706D2012092C67200C59A8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D706D2032092C6D000C59A8B /* Rotating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotating.swift; sourceTree = "<group>"; };
+		D706D2052092C72900C59A8B /* Orbiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orbiting.swift; sourceTree = "<group>"; };
+		D706D2072092C9D800C59A8B /* CommonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		D706D2092092CB7100C59A8B /* Circular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circular.swift; sourceTree = "<group>"; };
+		D706D20B2092CE4500C59A8B /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		D72FA0E42094C61500F9ACE2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D72FA0EA2094C68E00F9ACE2 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTAssert+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D706D1E52092B20800C59A8B /* MarsCalendar.framework in Frameworks */,
+				D706D1E52092B20800C59A8B /* MarsCalendar_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +86,7 @@
 		D706D1DC2092B20800C59A8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D706D1DB2092B20800C59A8B /* MarsCalendar.framework */,
+				D706D1DB2092B20800C59A8B /* MarsCalendar_iOS.framework */,
 				D706D1E42092B20800C59A8B /* MarsCalendarTests.xctest */,
 			);
 			name = Products;
@@ -71,7 +95,19 @@
 		D706D1DD2092B20800C59A8B /* MarsCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				D706D1DE2092B20800C59A8B /* MarsCalendar.h */,
+				D706D1F72092B28000C59A8B /* Planet.swift */,
+				D706D1FB2092B70B00C59A8B /* Star.swift */,
+				D706D1FD2092B73800C59A8B /* Body.swift */,
+				D706D1FF2092BAFF00C59A8B /* Sphere.swift */,
+				D706D2092092CB7100C59A8B /* Circular.swift */,
+				D706D2032092C6D000C59A8B /* Rotating.swift */,
+				D706D2052092C72900C59A8B /* Orbiting.swift */,
+				D706D2072092C9D800C59A8B /* CommonTypes.swift */,
+				D706D20B2092CE4500C59A8B /* CommonMethods.swift */,
+				D706D1F92092B2FB00C59A8B /* Calendar+Extensions.swift */,
+				D706D2012092C67200C59A8B /* Constants.swift */,
+				D72FA0E42094C61500F9ACE2 /* Constants.h */,
+				D72FA0EA2094C68E00F9ACE2 /* BridgingHeader.h */,
 				D706D1DF2092B20800C59A8B /* Info.plist */,
 			);
 			path = MarsCalendar;
@@ -81,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D706D1E92092B20800C59A8B /* MarsCalendarTests.swift */,
+				D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */,
 				D706D1EB2092B20800C59A8B /* Info.plist */,
 			);
 			path = MarsCalendarTests;
@@ -93,16 +130,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D706D1EC2092B20800C59A8B /* MarsCalendar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D706D1DA2092B20800C59A8B /* MarsCalendar */ = {
+		D706D1DA2092B20800C59A8B /* MarsCalendar-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D706D1EF2092B20800C59A8B /* Build configuration list for PBXNativeTarget "MarsCalendar" */;
+			buildConfigurationList = D706D1EF2092B20800C59A8B /* Build configuration list for PBXNativeTarget "MarsCalendar-iOS" */;
 			buildPhases = (
 				D706D1D62092B20800C59A8B /* Sources */,
 				D706D1D72092B20800C59A8B /* Frameworks */,
@@ -113,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = MarsCalendar;
+			name = "MarsCalendar-iOS";
 			productName = MarsCalendar;
-			productReference = D706D1DB2092B20800C59A8B /* MarsCalendar.framework */;
+			productReference = D706D1DB2092B20800C59A8B /* MarsCalendar_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D706D1E32092B20800C59A8B /* MarsCalendarTests */ = {
@@ -148,6 +184,7 @@
 				TargetAttributes = {
 					D706D1DA2092B20800C59A8B = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					D706D1E32092B20800C59A8B = {
 						CreatedOnToolsVersion = 9.3;
@@ -166,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D706D1DA2092B20800C59A8B /* MarsCalendar */,
+				D706D1DA2092B20800C59A8B /* MarsCalendar-iOS */,
 				D706D1E32092B20800C59A8B /* MarsCalendarTests */,
 			);
 		};
@@ -194,6 +231,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D706D20A2092CB7100C59A8B /* Circular.swift in Sources */,
+				D706D2042092C6D000C59A8B /* Rotating.swift in Sources */,
+				D706D20C2092CE4500C59A8B /* CommonMethods.swift in Sources */,
+				D706D2062092C72900C59A8B /* Orbiting.swift in Sources */,
+				D706D1F82092B28000C59A8B /* Planet.swift in Sources */,
+				D706D2002092BAFF00C59A8B /* Sphere.swift in Sources */,
+				D706D1FA2092B2FB00C59A8B /* Calendar+Extensions.swift in Sources */,
+				D706D2082092C9D800C59A8B /* CommonTypes.swift in Sources */,
+				D706D2022092C67200C59A8B /* Constants.swift in Sources */,
+				D706D1FC2092B70B00C59A8B /* Star.swift in Sources */,
+				D706D1FE2092B73800C59A8B /* Body.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D706D1EA2092B20800C59A8B /* MarsCalendarTests.swift in Sources */,
+				D78A955A2092D86F009B86EE /* XCTAssert+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +259,7 @@
 /* Begin PBXTargetDependency section */
 		D706D1E72092B20800C59A8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D706D1DA2092B20800C59A8B /* MarsCalendar */;
+			target = D706D1DA2092B20800C59A8B /* MarsCalendar-iOS */;
 			targetProxy = D706D1E62092B20800C59A8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -271,8 +320,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.3;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -327,8 +377,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.3;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -339,6 +390,7 @@
 		D706D1F02092B20800C59A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,7 +407,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.steverichey.MarsCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos11.3;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = MarsCalendar/BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +419,7 @@
 		D706D1F12092B20800C59A8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -380,7 +436,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.steverichey.MarsCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos11.3;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = MarsCalendar/BridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +447,7 @@
 		D706D1F32092B20800C59A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4CFV3QLG;
 				INFOPLIST_FILE = MarsCalendarTests/Info.plist;
@@ -399,6 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.steverichey.MarsCalendarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MarsCalendar/BridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -407,6 +467,7 @@
 		D706D1F42092B20800C59A8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4CFV3QLG;
 				INFOPLIST_FILE = MarsCalendarTests/Info.plist;
@@ -417,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.steverichey.MarsCalendarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MarsCalendar/BridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -434,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D706D1EF2092B20800C59A8B /* Build configuration list for PBXNativeTarget "MarsCalendar" */ = {
+		D706D1EF2092B20800C59A8B /* Build configuration list for PBXNativeTarget "MarsCalendar-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D706D1F02092B20800C59A8B /* Debug */,
