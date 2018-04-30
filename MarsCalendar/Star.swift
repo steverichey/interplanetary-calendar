@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Star: Body, Sphere, Rotating {
+enum Star: Body, Ellipsoid, Rotating {
     case sun
 
     var mass: Kilogram {
@@ -18,10 +18,17 @@ enum Star: Body, Sphere, Rotating {
         }
     }
 
-    var diameter: Kilometer {
+    var equatorialRadius: Kilometer {
         switch self {
         case .sun:
-            return diameter_sun
+            return radius_sun
+        }
+    }
+
+    var flattening: Double {
+        switch self {
+        case .sun:
+            return 0
         }
     }
 

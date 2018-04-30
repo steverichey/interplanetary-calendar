@@ -18,7 +18,10 @@ private let earthDayInSeconds: Double = earthDayInMinutes * minuteInSeconds
 
 class MarsCalendarTests: XCTestCase {
     func testMass() {
+        // stars
         XCTAssertPow(Star.sun.mass, 30)
+
+        // planets
         XCTAssertPow(Planet.mercury.mass, 23);
         XCTAssertPow(Planet.venus.mass, 24);
         XCTAssertPow(Planet.earth.mass, 24);
@@ -27,10 +30,16 @@ class MarsCalendarTests: XCTestCase {
         XCTAssertPow(Planet.saturn.mass, 26);
         XCTAssertPow(Planet.uranus.mass, 25);
         XCTAssertPow(Planet.neptune.mass, 26);
+
+        // moons
+        XCTAssertPow(Moon.moon.mass, 22)
     }
 
     func testStandardGravitationalParameter() {
+        // stars
         XCTAssertEqual(132_712_440_018, Star.sun.standardGravitationalParameter, percentAccuracy: 0.1)
+
+        // planets
         XCTAssertEqual(22_032, Planet.mercury.standardGravitationalParameter, percentAccuracy: 0.1)
         XCTAssertEqual(324_859, Planet.venus.standardGravitationalParameter, percentAccuracy: 0.1)
         XCTAssertEqual(398_600.4418, Planet.earth.standardGravitationalParameter, percentAccuracy: 0.1)
@@ -39,19 +48,42 @@ class MarsCalendarTests: XCTestCase {
         XCTAssertEqual(37_931_187, Planet.saturn.standardGravitationalParameter, percentAccuracy: 0.1)
         XCTAssertEqual(5_793_939, Planet.uranus.standardGravitationalParameter, percentAccuracy: 0.1)
         XCTAssertEqual(6_836_529, Planet.neptune.standardGravitationalParameter, percentAccuracy: 0.1)
+
+        // moons
+        XCTAssertEqual(4_904.8695, Moon.moon.standardGravitationalParameter, percentAccuracy: 0.1)
     }
 
     func testCircumference() {
-        XCTAssertEqual(21_344, Planet.mars.circumference, percentAccuracy: 0.1)
+        XCTAssertEqual(21_344, Planet.mars.equatorialCircumference, percentAccuracy: 0.1)
+        XCTAssertEqual(40_075, Planet.earth.meanCircumference, percentAccuracy: 0.1)
+    }
+
+    func testEllipsoid() {
+        XCTAssertEqual(6_356.7523142, Planet.earth.polarRadius, percentAccuracy: 0.001)
+        XCTAssertEqual(Planet.mars.equatorialRadius, Planet.mars.polarRadius, percentAccuracy: 0.001)
+    }
+
+    func testVolume() {
+        XCTAssertEqual(1E12, Planet.earth.volume, percentAccuracy: 0.1)
     }
 
     func testRotationalVelocity() {
         XCTAssertEqual(0.24117, Planet.mars.rotationalVelocity, percentAccuracy: 0.1)
     }
 
-    func testDayLength() {
-        XCTAssertEqual(24 * hourInSeconds, Planet.earth.siderealRotationPeriod, accuracy: 400)
-        XCTAssertEqual(24.6597899 * hourInSeconds, Planet.mars.siderealRotationPeriod, accuracy: 400)
+    func testJulianDay() {
+//        XCTAssertEqual(24 * 60 * 60, Planet.earth.julian.day)
+//        print("julian: \(Planet.earth.julian.day), sidereal: \(Planet.earth.sidereal.day)")
+    }
+
+    func testSiderealDay() {
+        Calendar()
+        XCTAssertEqual(1.027491252, Planet.mars.siderealRotationPeriod / Planet.earth.siderealRotationPeriod, percentAccuracy: 0.01)
+    }
+
+    func testMartianYear() {
+        XCTAssertEqual(686.9726, Planet.mars.orbitalPeriod(around: Star.sun).convertTo(days: .julian), percentAccuracy: 0.01)
+        XCTAssertEqual(668.5921, Planet.mars.orbitalPeriod(around: Star.sun).convertTo(days: .solar), percentAccuracy: 0.01)
     }
 
     func testAphelion() {

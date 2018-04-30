@@ -21,6 +21,12 @@
 		D706D20A2092CB7100C59A8B /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2092092CB7100C59A8B /* Circular.swift */; };
 		D706D20C2092CE4500C59A8B /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D20B2092CE4500C59A8B /* CommonMethods.swift */; };
 		D78A955A2092D86F009B86EE /* XCTAssert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */; };
+		D79E3AC220960D4C00930BC1 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3AC120960D4C00930BC1 /* Moon.swift */; };
+		D79E3AC42096109C00930BC1 /* PlanetCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3AC32096109C00930BC1 /* PlanetCalendar.swift */; };
+		D79E3AC6209619D400930BC1 /* Ellipsoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3AC5209619D400930BC1 /* Ellipsoid.swift */; };
+		D79E3AC820961C8E00930BC1 /* HasVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3AC720961C8E00930BC1 /* HasVolume.swift */; };
+		D79E3ACA2096231200930BC1 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3AC92096231200930BC1 /* Date+Extensions.swift */; };
+		D79E3ACC2096418400930BC1 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3ACB2096418400930BC1 /* Day.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		D72FA0E42094C61500F9ACE2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D72FA0EA2094C68E00F9ACE2 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTAssert+Extensions.swift"; sourceTree = "<group>"; };
+		D79E3AC120960D4C00930BC1 /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		D79E3AC32096109C00930BC1 /* PlanetCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCalendar.swift; sourceTree = "<group>"; };
+		D79E3AC5209619D400930BC1 /* Ellipsoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellipsoid.swift; sourceTree = "<group>"; };
+		D79E3AC720961C8E00930BC1 /* HasVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasVolume.swift; sourceTree = "<group>"; };
+		D79E3AC92096231200930BC1 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		D79E3ACB2096418400930BC1 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +108,21 @@
 			isa = PBXGroup;
 			children = (
 				D706D1F72092B28000C59A8B /* Planet.swift */,
+				D79E3AC32096109C00930BC1 /* PlanetCalendar.swift */,
+				D79E3AC120960D4C00930BC1 /* Moon.swift */,
 				D706D1FB2092B70B00C59A8B /* Star.swift */,
 				D706D1FD2092B73800C59A8B /* Body.swift */,
+				D79E3ACB2096418400930BC1 /* Day.swift */,
 				D706D1FF2092BAFF00C59A8B /* Sphere.swift */,
+				D79E3AC5209619D400930BC1 /* Ellipsoid.swift */,
+				D79E3AC720961C8E00930BC1 /* HasVolume.swift */,
 				D706D2092092CB7100C59A8B /* Circular.swift */,
 				D706D2032092C6D000C59A8B /* Rotating.swift */,
 				D706D2052092C72900C59A8B /* Orbiting.swift */,
 				D706D2072092C9D800C59A8B /* CommonTypes.swift */,
 				D706D20B2092CE4500C59A8B /* CommonMethods.swift */,
 				D706D1F92092B2FB00C59A8B /* Calendar+Extensions.swift */,
+				D79E3AC92096231200930BC1 /* Date+Extensions.swift */,
 				D706D2012092C67200C59A8B /* Constants.swift */,
 				D72FA0E42094C61500F9ACE2 /* Constants.h */,
 				D72FA0EA2094C68E00F9ACE2 /* BridgingHeader.h */,
@@ -236,12 +254,18 @@
 				D706D20C2092CE4500C59A8B /* CommonMethods.swift in Sources */,
 				D706D2062092C72900C59A8B /* Orbiting.swift in Sources */,
 				D706D1F82092B28000C59A8B /* Planet.swift in Sources */,
+				D79E3AC42096109C00930BC1 /* PlanetCalendar.swift in Sources */,
+				D79E3AC820961C8E00930BC1 /* HasVolume.swift in Sources */,
 				D706D2002092BAFF00C59A8B /* Sphere.swift in Sources */,
 				D706D1FA2092B2FB00C59A8B /* Calendar+Extensions.swift in Sources */,
+				D79E3ACA2096231200930BC1 /* Date+Extensions.swift in Sources */,
 				D706D2082092C9D800C59A8B /* CommonTypes.swift in Sources */,
+				D79E3ACC2096418400930BC1 /* Day.swift in Sources */,
 				D706D2022092C67200C59A8B /* Constants.swift in Sources */,
 				D706D1FC2092B70B00C59A8B /* Star.swift in Sources */,
+				D79E3AC220960D4C00930BC1 /* Moon.swift in Sources */,
 				D706D1FE2092B73800C59A8B /* Body.swift in Sources */,
+				D79E3AC6209619D400930BC1 /* Ellipsoid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

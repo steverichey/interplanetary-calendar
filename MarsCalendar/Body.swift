@@ -8,18 +8,15 @@
 
 import Foundation
 
-protocol Body {
+protocol Body: HasVolume {
     var mass: Kilogram { get }
-    var density: KilogramPerCubicKilometer { get }
 }
 
 extension Body {
     var standardGravitationalParameter: CubicKilometerPerSquareSecond {
         return Double.gravitationalConstant * mass
     }
-}
 
-extension Body where Self: Sphere {
     var density: KilogramPerCubicKilometer {
         return mass / volume
     }

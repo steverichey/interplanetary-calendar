@@ -12,9 +12,9 @@ protocol Rotating {
     var rotationalVelocity: KilometerPerSecond { get }
 }
 
-extension Rotating where Self: Sphere {
+extension Rotating where Self: Circular {
     // equivalent to days
     var siderealRotationPeriod: Second {
-        return circumference / rotationalVelocity
+        return meanRadius / rotationalVelocity
     }
 }

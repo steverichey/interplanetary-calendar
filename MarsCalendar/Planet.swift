@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Planet: Body, Sphere, Rotating, Orbiting {
+enum Planet: Body, Ellipsoid, Rotating, Orbiting {
     case mercury
     case venus
     case earth
@@ -40,24 +40,33 @@ enum Planet: Body, Sphere, Rotating, Orbiting {
         }
     }
 
-    var diameter: Kilometer {
+    var equatorialRadius: Kilometer {
         switch self {
         case .mercury:
-            return diameter_mercury
+            return radius_mercury
         case .venus:
-            return diameter_venus
+            return radius_venus
         case .earth:
-            return diameter_earth
+            return earth_wgs80_equatorial_radius
         case .mars:
-            return diameter_mars
+            return radius_mars
         case .jupiter:
-            return diameter_jupiter
+            return radius_jupiter
         case .saturn:
-            return diameter_saturn
+            return radius_saturn
         case .uranus:
-            return diameter_uranus
+            return radius_uranus
         case .neptune:
-            return diameter_neptune
+            return radius_neptune
+        }
+    }
+
+    var flattening: Double {
+        switch self {
+        case .earth:
+            return 1 / earth_wgs80_inverse_flattening
+        default:
+            return 0
         }
     }
 
@@ -145,24 +154,15 @@ enum Planet: Body, Sphere, Rotating, Orbiting {
         }
     }
 
-    var sol: Double {
+    var secondsPerSolarDay: Second? {
         switch self {
-        case .mercury:
-            return siderealRotationPeriod / Planet.earth.siderealRotationPeriod
-        case .venus:
-            return siderealRotationPeriod / Planet.earth.siderealRotationPeriod
         case .earth:
-            return 1
+            return seconds_per_julian_day
         case .mars:
-            return siderealRotationPeriod / Planet.earth.siderealRotationPeriod
-        case .jupiter:
-            return siderealRotationPeriod / Planet.earth.siderealRotationPeriod
-        case .saturn:
-            return siderealRotationPeriod / Planet.earth.siderealRotationPeriod
-        case .uranus:
-            return siderealRotationPeriod / Planet.earth.siderealRotationPeriod
-        case .neptune:
-            return siderealRotationPeriod / Planet.earth.siderealRotationPeriod
+            return seconds_per_martian_solar_day
+        // other planets do not yet have solar days defined
+        default:
+            return nil
         }
     }
 }
