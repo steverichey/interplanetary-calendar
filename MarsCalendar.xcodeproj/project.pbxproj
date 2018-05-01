@@ -20,6 +20,8 @@
 		D706D2082092C9D800C59A8B /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2072092C9D800C59A8B /* CommonTypes.swift */; };
 		D706D20A2092CB7100C59A8B /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D2092092CB7100C59A8B /* Circular.swift */; };
 		D706D20C2092CE4500C59A8B /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706D20B2092CE4500C59A8B /* CommonMethods.swift */; };
+		D71A3DA4209807AD0001234F /* InterplanetaryCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A3DA3209807AD0001234F /* InterplanetaryCalendar.swift */; };
+		D71A3DA620980FB20001234F /* Date+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A3DA520980FB20001234F /* Date+Tests.swift */; };
 		D78A955A2092D86F009B86EE /* XCTAssert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */; };
 		D79E3AC220960D4C00930BC1 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3AC120960D4C00930BC1 /* Moon.swift */; };
 		D79E3AC42096109C00930BC1 /* PlanetCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E3AC32096109C00930BC1 /* PlanetCalendar.swift */; };
@@ -56,6 +58,8 @@
 		D706D2072092C9D800C59A8B /* CommonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
 		D706D2092092CB7100C59A8B /* Circular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circular.swift; sourceTree = "<group>"; };
 		D706D20B2092CE4500C59A8B /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		D71A3DA3209807AD0001234F /* InterplanetaryCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterplanetaryCalendar.swift; sourceTree = "<group>"; };
+		D71A3DA520980FB20001234F /* Date+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Tests.swift"; sourceTree = "<group>"; };
 		D72FA0E42094C61500F9ACE2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D72FA0EA2094C68E00F9ACE2 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTAssert+Extensions.swift"; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				D72FA0E42094C61500F9ACE2 /* Constants.h */,
 				D72FA0EA2094C68E00F9ACE2 /* BridgingHeader.h */,
 				D706D1DF2092B20800C59A8B /* Info.plist */,
+				D71A3DA3209807AD0001234F /* InterplanetaryCalendar.swift */,
 			);
 			path = MarsCalendar;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				D706D1E92092B20800C59A8B /* MarsCalendarTests.swift */,
+				D71A3DA520980FB20001234F /* Date+Tests.swift */,
 				D78A95592092D86F009B86EE /* XCTAssert+Extensions.swift */,
 				D706D1EB2092B20800C59A8B /* Info.plist */,
 			);
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D706D20A2092CB7100C59A8B /* Circular.swift in Sources */,
+				D71A3DA4209807AD0001234F /* InterplanetaryCalendar.swift in Sources */,
 				D706D2042092C6D000C59A8B /* Rotating.swift in Sources */,
 				D706D20C2092CE4500C59A8B /* CommonMethods.swift in Sources */,
 				D706D2062092C72900C59A8B /* Orbiting.swift in Sources */,
@@ -275,6 +282,7 @@
 			files = (
 				D706D1EA2092B20800C59A8B /* MarsCalendarTests.swift in Sources */,
 				D78A955A2092D86F009B86EE /* XCTAssert+Extensions.swift in Sources */,
+				D71A3DA620980FB20001234F /* Date+Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

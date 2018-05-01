@@ -14,14 +14,21 @@
 #define speed_of_light 299792.458 // km/s
 #define astrononical_unit 149597870.700 // km
 #define seconds_per_julian_day 86400.0
-#define milliseconds_per_julian_day 86400000.0
 #define julian_date_at_unix_epoch 2440587.5
 #define julian_date_at_j2000 2451545.0
-// the difference between TAI and UTC
-#define tai_offset 37
-#define total_julian_leap_seconds 69.184
+// how much TAI is ahead of UTC
+// 10 seconds as of 1972, plus 27 leap seconds added since
+#define utc_tai_offset 37.0
+// how much TT is ahead of TAI
+#define tai_tt_offset 32.184
+// this date is used as a fixed point
+// it's the first (?) time midnight UTC and midnight MTC were at the same time after J2000
 #define julian_date_at_martian_prime_meridian_midnight_after_j2000 4.5
 #define seconds_per_martian_solar_day 88775.244
+// the martian sol epoch is December 29, 1873 gregorian
+#define martian_sols_since_martian_sol_epoch 44796.0
+// #define seconds_since_martian_sol_epoch 44796.0 *
+#define martian_prime_meridian_midnight_offset -0.00096
 
 // km
 #define radius_mercury   2439.7

@@ -77,7 +77,6 @@ class MarsCalendarTests: XCTestCase {
     }
 
     func testSiderealDay() {
-        Calendar()
         XCTAssertEqual(1.027491252, Planet.mars.siderealRotationPeriod / Planet.earth.siderealRotationPeriod, percentAccuracy: 0.01)
     }
 

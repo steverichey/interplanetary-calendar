@@ -154,15 +154,15 @@ enum Planet: Body, Ellipsoid, Rotating, Orbiting {
         }
     }
 
-    var secondsPerSolarDay: Second? {
+    var secondsPerSolarDay: Second {
         switch self {
         case .earth:
             return seconds_per_julian_day
         case .mars:
             return seconds_per_martian_solar_day
-        // other planets do not yet have solar days defined
+        // todo: other planets do not yet have solar days defined
         default:
-            return nil
+            return 0
         }
     }
 }
