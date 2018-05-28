@@ -1,5 +1,5 @@
 #!/bin/bash
 
-set -eurx
+set -eux
 
 swift test
