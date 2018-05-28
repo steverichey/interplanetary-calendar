@@ -1,0 +1,23 @@
+language: generic
+dist: trusty
+os: linux
+
+before_script:
+  - swift package --version
+
+script:
+  - sh test.sh
+
+branches:
+  only:
+    - master
+
+git:
+  depth: 10
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - swift
