@@ -1,6 +1,6 @@
 # InterplanetaryCalendar
 
-Adds support to calendars using non-geocentric reference points.
+Adds support to calendars using non-geocentric reference points. This is still a work-in-progress and is not complete.
 
 ## About
 
