@@ -2,6 +2,9 @@ language: generic
 dist: trusty
 os: linux
 
+install:
+  - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
+
 before_script:
   - swift package --version
 
