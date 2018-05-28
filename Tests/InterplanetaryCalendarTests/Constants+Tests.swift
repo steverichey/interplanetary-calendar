@@ -115,4 +115,23 @@ class ConstantsTests: XCTestCase {
     XCTAssertEqual(365 * earthDayInSeconds, Planet.earth.orbitalPeriod(around: Star.sun), accuracy: 100_000)
     XCTAssertEqual(59_355_036, Planet.mars.orbitalPeriod(around: Star.sun), accuracy: 100_000)
   }
+
+  static var allTests = [
+    ("testMass", testMass),
+    ("testStandardGravitationalParameter", testStandardGravitationalParameter),
+    ("testCircumference", testCircumference),
+    ("testEllipsoid", testEllipsoid),
+    ("testVolume", testVolume),
+    ("testRotationalVelocity", testRotationalVelocity),
+    ("testJulianDay", testJulianDay),
+    ("testSiderealDay", testSiderealDay),
+    ("testMartianYear", testMartianYear),
+    ("testAphelion", testAphelion),
+    ("testPerihelion", testPerihelion),
+    ("testSemiMinorAxis", testSemiMinorAxis),
+    ("testSemiMajorAxis", testSemiMajorAxis),
+    ("testOrbitalVelocity", testOrbitalVelocity),
+    ("testMeanOrbitalVelocity", testMeanOrbitalVelocity),
+    ("testOrbitalPeriod", testOrbitalPeriod)
+  ]
 }
