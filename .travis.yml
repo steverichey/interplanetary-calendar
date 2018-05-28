@@ -19,8 +19,3 @@ git:
   depth: 10
 
 sudo: false
-
-addons:
-  apt:
-    packages:
-      - swift
