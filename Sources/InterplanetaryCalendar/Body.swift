@@ -9,15 +9,15 @@
 import Foundation
 
 protocol Body: HasVolume {
-    var mass: Kilogram { get }
+  var mass: Kilogram { get }
 }
 
 extension Body {
-    var standardGravitationalParameter: CubicKilometerPerSquareSecond {
-        return Double.gravitationalConstant * mass
-    }
+  var standardGravitationalParameter: CubicKilometerPerSquareSecond {
+    return Double.gravitationalConstant * mass
+  }
 
-    var density: KilogramPerCubicKilometer {
-        return mass / volume
-    }
+  var density: KilogramPerCubicKilometer {
+    return mass / volume
+  }
 }

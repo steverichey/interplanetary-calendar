@@ -9,7 +9,7 @@
 import Foundation
 
 extension Calendar {
-    var planet: Planet {
-        return .earth
-    }
+  var planet: Planet {
+    return .earth
+  }
 }

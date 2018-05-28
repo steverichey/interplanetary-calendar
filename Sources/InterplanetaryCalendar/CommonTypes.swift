@@ -19,14 +19,14 @@ typealias CubicKilometerPerKilogramSquareSecond = Double
 typealias CubicKilometerPerSquareSecond = Double
 
 extension Second {
-    // convert a time interval in seconds to a type of day scale
-    func convertTo(days: DayScale) -> Day {
-        return self / days.length
-    }
+  // convert a time interval in seconds to a type of day scale
+  func convertTo(days: DayScale) -> Day {
+    return self / days.length
+  }
 }
 
 extension Day {
-    func convertToSeconds(scale: DayScale) -> Second {
-        return self * scale.length
-    }
+  func convertToSeconds(scale: DayScale) -> Second {
+    return self * scale.length
+  }
 }

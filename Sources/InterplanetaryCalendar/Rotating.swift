@@ -9,12 +9,12 @@
 import Foundation
 
 protocol Rotating {
-    var rotationalVelocity: KilometerPerSecond { get }
+  var rotationalVelocity: KilometerPerSecond { get }
 }
 
 extension Rotating where Self: Circular {
-    // equivalent to days
-    var siderealRotationPeriod: Second {
-        return meanRadius / rotationalVelocity
-    }
+  // equivalent to days
+  var siderealRotationPeriod: Second {
+    return meanRadius / rotationalVelocity
+  }
 }

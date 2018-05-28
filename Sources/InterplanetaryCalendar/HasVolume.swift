@@ -9,5 +9,5 @@
 import Foundation
 
 protocol HasVolume {
-    var volume: CubicKilometer { get }
+  var volume: CubicKilometer { get }
 }
