@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
-set -eurx
+if [ "$(uname)" == "Darwin" ]; then
+  set -eurx
+else
+  set -eux
+fi
 
 while :; do
   clear
