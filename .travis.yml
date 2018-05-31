@@ -5,9 +5,6 @@ os: linux
 install:
   - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
 
-before_script:
-  - swift package --version
-
 script:
   - sh test.sh
 
@@ -16,6 +13,6 @@ branches:
     - master
 
 git:
-  depth: 10
+  depth: 1
 
 sudo: false
