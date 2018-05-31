@@ -36,7 +36,14 @@ class DateTests: XCTestCase {
     XCTAssertEqual(51307.17813, date.martianSolDate(), percentAccuracy: 0.00001)
   }
 
+  func testInitLeapSecondFormat() {
+    XCTAssertNotNil(Date(leapSecondFormat: "1972 Jun 30 23:59:60"))
+    XCTAssertNotNil(Date(leapSecondFormat: "1982 Jun 30 23:59:60"))
+    XCTAssertNotNil(Date(leapSecondFormat: "2008 Dec 31 23:59:60"))
+  }
+
   static var allTests = [
-    ("testTimeSince", testTimeSince)
+    ("testTimeSince", testTimeSince),
+    ("testInitLeapSecondFormat", testInitLeapSecondFormat)
   ]
 }

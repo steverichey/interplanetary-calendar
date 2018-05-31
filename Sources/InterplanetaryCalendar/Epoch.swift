@@ -11,6 +11,8 @@ import Foundation
 enum Epoch {
   // sort of an arbitrary time, long ago
   case julian
+  // January 1, 1900
+  case networkTimeProtocol
   // january 1, 1970 (this is the default in Foundation)
   case unix
   // january 1, 2000 gregorian
@@ -22,6 +24,8 @@ enum Epoch {
     switch self {
     case .julian:
         return 0
+    case .networkTimeProtocol:
+      return Date.julianDateAtNTPEpoch
     case .unix:
         return Date.julianDateAtUnixEpoch
     case .j2000:

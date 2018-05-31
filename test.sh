@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
-set -eux
+set -eurx
 
 swift test

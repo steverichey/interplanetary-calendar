@@ -20,7 +20,7 @@ enum TimeStandard {
     case .internationalAtomic:
       // how much TAI is ahead of UTC
       // 10 seconds as of 1972, plus 27 leap seconds added since
-      return 37.0
+      return 10.0 + LeapSecond.total
     case .terrestrial:
       // how much TT is ahead of TAI
       return TimeStandard.internationalAtomic.offset + 32.184
