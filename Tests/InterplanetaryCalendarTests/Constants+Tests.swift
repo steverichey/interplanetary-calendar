@@ -22,14 +22,14 @@ class ConstantsTests: XCTestCase {
     XCTAssertPow(Star.sun.mass, 30)
 
     // planets
-    XCTAssertPow(Planet.mercury.mass, 23);
-    XCTAssertPow(Planet.venus.mass, 24);
-    XCTAssertPow(Planet.earth.mass, 24);
-    XCTAssertPow(Planet.mars.mass, 23);
-    XCTAssertPow(Planet.jupiter.mass, 27);
-    XCTAssertPow(Planet.saturn.mass, 26);
-    XCTAssertPow(Planet.uranus.mass, 25);
-    XCTAssertPow(Planet.neptune.mass, 26);
+    XCTAssertPow(Planet.mercury.mass, 23)
+    XCTAssertPow(Planet.venus.mass, 24)
+    XCTAssertPow(Planet.earth.mass, 24)
+    XCTAssertPow(Planet.mars.mass, 23)
+    XCTAssertPow(Planet.jupiter.mass, 27)
+    XCTAssertPow(Planet.saturn.mass, 26)
+    XCTAssertPow(Planet.uranus.mass, 25)
+    XCTAssertPow(Planet.neptune.mass, 26)
 
     // moons
     XCTAssertPow(Moon.moon.mass, 22)

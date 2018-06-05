@@ -18,7 +18,7 @@ extension Double {
   static let speedOfLight = 299792.458 // km/s
   static let astrononicalUnit = 149597870.700 // km
   static let julianDateAtUnixEpoch = 2440587.5
-  static let julianDateAtJ2000 =  2451545.0
+  static let julianDateAtJ2000 = 2451545.0
   static let julianDaysFromUnixEpochToJ2000 = Double.julianDateAtJ2000 - Double.julianDateAtUnixEpoch
 }
 

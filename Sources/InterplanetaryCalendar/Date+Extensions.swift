@@ -8,6 +8,10 @@
 
 import Foundation
 
+// todo: find better names and re-enable swiftlint
+// swiftlint:disable identifier_name
+// swiftlint:disable line_length
+
 extension Date {
   static let julianDateAtUnixEpoch = 2440587.5
   static let julianDateAtNTPEpoch = 2415020.5

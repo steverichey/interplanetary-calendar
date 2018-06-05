@@ -8,7 +8,7 @@
 
 enum Eccentricity: Double {
   case mercury = 0.20563069
-  case venus  = 0.00677323
+  case venus = 0.00677323
   case earth = 0.01671022
   case mars = 0.09341233
   case jupiter = 0.04839266

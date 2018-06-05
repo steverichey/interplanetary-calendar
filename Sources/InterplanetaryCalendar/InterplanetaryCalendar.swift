@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct InterplanetaryCalendar : Hashable, Equatable {
+struct InterplanetaryCalendar: Hashable, Equatable {
   public enum Identifier {
     case julian
     case martian
