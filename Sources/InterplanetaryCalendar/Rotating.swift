@@ -15,6 +15,6 @@ protocol Rotating {
 extension Rotating where Self: Circular {
   // equivalent to days
   var siderealRotationPeriod: Second {
-    return meanRadius / rotationalVelocity
+    return meanCircumference / rotationalVelocity
   }
 }

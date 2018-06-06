@@ -100,13 +100,13 @@ extension Date {
     // if given the Julian epoch, TT, and julian scale, this returns the "terrestrial universal date"
     // if given the J2000 epoch, TT, and julian scale, this returns the terrestrial days since J2000
     // if given the martian solar epoch, TT, and solar scale, this returns the martial solar date
-    func daysSince(epoch: Epoch, timeStandard: TimeStandard, scale: DayScale = .julian) -> Day {
-      return timeIntervalSince(epoch: epoch, timeStandard: timeStandard) / scale.length
+    func daysSince(epoch: Epoch, timeStandard: TimeStandard, scale: DayConvention = .earth) -> Day {
+      return timeIntervalSince(epoch: epoch, timeStandard: timeStandard) / scale.rawValue
     }
 
     // todo: if we compute this in seconds first (instead of julian days) we don't need to divide by a ratio, i think
     func martianSolDate() -> Day {
-      let offsetDays = timeIntervalSince(epoch: .martianSol, timeStandard: .terrestrial) / DayScale.solar.length
+      let offsetDays = timeIntervalSince(epoch: .martianSol, timeStandard: .terrestrial) / Planet.mars.siderealRotationPeriod
       return offsetDays
         + Date.martianSolarDateAtJ2000
         + Date.martianPrimeMeridianMidnightOffset

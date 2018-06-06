@@ -81,8 +81,8 @@ class ConstantsTests: XCTestCase {
   }
 
   func testMartianYear() {
-    XCTAssertEqual(686.9726, Planet.mars.orbitalPeriod(around: Star.sun).convertTo(days: .julian), percentAccuracy: 0.01)
-    XCTAssertEqual(668.5921, Planet.mars.orbitalPeriod(around: Star.sun).convertTo(days: .solar), percentAccuracy: 0.01)
+    XCTAssertEqual(686.9726, Planet.mars.orbitalPeriod(around: Star.sun).convertTo(convention: .earth), percentAccuracy: 0.01)
+    XCTAssertEqual(668.5921, Planet.mars.orbitalPeriod(around: Star.sun).convertTo(convention: .mars), percentAccuracy: 0.01)
   }
 
   func testAphelion() {

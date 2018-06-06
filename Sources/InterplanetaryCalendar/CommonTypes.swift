@@ -19,14 +19,19 @@ typealias CubicKilometerPerKilogramSquareSecond = Double
 typealias CubicKilometerPerSquareSecond = Double
 
 extension Second {
+  // seconds in a conventional earth day
+  static let perJulianDay = 86400.0
+  // seconds in a martian solar day
+  static let perMartianSolarDay = 88775.244
+
   // convert a time interval in seconds to a type of day scale
-  func convertTo(days: DayScale) -> Day {
-    return self / days.length
+  func convertTo(convention: DayConvention) -> Day {
+    return self / convention.rawValue
   }
 }
 
 extension Day {
-  func convertToSeconds(scale: DayScale) -> Second {
-    return self * scale.length
+  func convertToSeconds(convention: DayConvention) -> Second {
+    return self * convention.rawValue
   }
 }
