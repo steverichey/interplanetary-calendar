@@ -6,7 +6,7 @@ install:
   - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
 
 script:
-  - sh lint.sh ; sh test.sh
+  - sh install_swiftlint.sh ; sh lint.sh ; sh test.sh
 
 branches:
   only:

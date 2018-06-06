@@ -6,4 +6,8 @@ else
   set -eux
 fi
 
-swiftlint
+if [ "$(uname)" = "Darwin" ]; then
+  swiftlint
+else
+  ./swiftlint
+fi
