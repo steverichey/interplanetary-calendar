@@ -3,6 +3,7 @@ opt_in_rules:
   - contains_over_first_not_nil
   - empty_count
   - fatal_error_message
+  - file_header
   - first_where
   - force_unwrapping
   - implicit_return
@@ -17,3 +18,12 @@ opt_in_rules:
 line_length:
   - 160
   - 200
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/  .*\.swift
+                    \/\/  InterplanetaryCalendar(Tests)?
+                    \/\/
+                    \/\/  Copyright 2018 Steve Richey. All rights reserved.
+                    \/\/  See license.md for license information.
+                    \/\/

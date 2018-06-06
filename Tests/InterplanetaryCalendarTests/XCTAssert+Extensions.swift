@@ -1,9 +1,9 @@
 //
 //  XCTAssert+Extensions.swift
-//  MarsCalendarTests
+//  InterplanetaryCalendarTests
 //
-//  Created by ad laos on 4/26/18.
-//  Copyright © 2018 STVR. All rights reserved.
+//  Copyright 2018 Steve Richey. All rights reserved.
+//  See license.md for license information.
 //
 
 import Foundation
