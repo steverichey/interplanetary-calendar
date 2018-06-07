@@ -13,4 +13,5 @@ else
     https://github.com/realm/SwiftLint/releases/download/0.25.1/portable_swiftlint.zip
 
   unzip portable_swiftlint.zip
+  chmod +x swiftlint
 fi
