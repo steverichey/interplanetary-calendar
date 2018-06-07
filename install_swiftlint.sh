@@ -16,5 +16,6 @@ else
   lsattr swiftlint
   file swiftlint
   ldd swiftlint
-  chmod +x swiftlint
+  chmod +wrx swiftlint
+  lsattr swiftlint
 fi
