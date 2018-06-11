@@ -8,6 +8,7 @@
 
 import Foundation
 
+// maybe this should be TimeScale
 enum TimeStandard {
   case coordinatedUniversal
   case internationalAtomic

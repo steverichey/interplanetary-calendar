@@ -13,6 +13,7 @@ import Foundation
 // swiftlint:disable line_length
 
 extension Date {
+  static let julianDateAtMartianSolarEpoch = 2405521.5
   static let julianDateAtUnixEpoch = 2440587.5
   static let julianDateAtNTPEpoch = 2415020.5
   static let julianDateAtJ2000 = 2451545.0 // maybe 2451544.5
@@ -22,54 +23,8 @@ extension Date {
   static let martianSolarDateAtJ2000 = 44796.0
   static let martianPrimeMeridianMidnightOffset = -0.00096
 
-  // allows constructing dates from leapsecond formatting
-  // Foundation doesn't allow 60 seconds :(
-  init?(leapSecondFormat: String) {
-    let split = leapSecondFormat.split(separator: " ")
-
-    // "1972 Jun 30 24:00:00"
-    guard let year = split[optional: 0],
-      let month = split[optional: 1],
-      let day = split[optional: 2],
-      let time = split[optional: 3] else {
-      return nil
-    }
-
-    let splitTime = time.split(separator: ":")
-
-    guard let hour = splitTime[optional: 0],
-      let minute = splitTime[optional: 1],
-      let second = splitTime[optional: 2] else {
-      return nil
-    }
-
-    // we could get these from Calendar.current but the "current" calendar could be anything
-    // and leap second formats (it would seem) are gregorian
-    // if we create a new gregorian calendar, the short names are "M01", "M02", etc (???)
-    // practically speaking, leap seconds are always in June or December, so we only really need two here
-    let symbols = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-
-    guard let yearInt = Int(year),
-      let dayInt = Int(day),
-      let hourInt = Int(hour),
-      let minuteInt = Int(minute),
-      let secondInt = Int(second),
-      let zeroIndexMonthInt = symbols.index(of: String(month)) else {
-      return nil
-    }
-
-    let components = DateComponents(year: yearInt,
-                                    month: zeroIndexMonthInt + 1,
-                                    day: dayInt,
-                                    hour: hourInt,
-                                    minute: minuteInt,
-                                    second: secondInt)
-
-    guard let date = Calendar(identifier: .gregorian).date(from: components) else {
-      return nil
-    }
-
-    self = date
+  init(timeInterval: TimeInterval, since epoch: Epoch, timeStandard: TimeStandard = .coordinatedUniversal) {
+    self.init(timeIntervalSince1970: timeInterval + epoch.julianSeconds - Epoch.unix.julianSeconds)
   }
 
   func timeIntervalSince(epoch: Epoch, timeStandard: TimeStandard) -> Second {

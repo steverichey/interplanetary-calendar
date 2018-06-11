@@ -9,7 +9,8 @@
 import Foundation
 
 enum Epoch {
-  // sort of an arbitrary time, long ago
+  // noon on Monday, January 1, 4713 BC, proleptic Julian calendar
+  // November 24, 4714 BC, in the proleptic Gregorian calendar
   case julian
   // January 1, 1900
   case networkTimeProtocol
@@ -31,7 +32,12 @@ enum Epoch {
     case .j2000:
         return Date.julianDateAtJ2000
     case .martianSol:
-        return 0
+        return Date.julianDateAtMartianSolarEpoch
     }
+  }
+
+  // this should either take a convention or not use one at all
+  var julianSeconds: Second {
+    return julianDate * DayConvention.earth.rawValue
   }
 }
