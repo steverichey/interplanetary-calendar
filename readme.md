@@ -36,6 +36,7 @@ Note that all API is a very early work in progress and subject to change at any 
 # Todo
 
 - [ ] Live interplanetary clock in browser (for now, see [http://jtauber.github.io/mars-clock/](here))
+- [ ] Support for Swatch internet time [https://en.wikipedia.org/wiki/Swatch_Internet_Time](see here)
 - [ ] Support for leap second smearing
 - [ ] Differentiate between sidereal and solar days for all planets; automatic computation of both based on orbital and rotational velocity
 - [ ] Protocol conformance for Foundation Calendar classes
